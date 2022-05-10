@@ -69,8 +69,11 @@ BASE INIT
 
 html {
   font-size: 15px;
-  font-family: Poppins;
+  font-family: "Poppins";
 
+  @include media-breakpoint-up(xl) {
+    font-size: 17px;
+  }
 }
 
 h2 {
@@ -78,6 +81,12 @@ h2 {
   font-weight: bold;
   font-size: 2.0rem;
   line-height: 2.3rem;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 17px;
+    font-size: 1.75rem;
+    line-height: 2.3rem;
+  }
 }
 
 label {
@@ -87,4 +96,19 @@ label {
 
 p, li {
   line-height: 2.3rem;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #0E2E47;
+
+  &:focus {
+    background-color: $inputSelectColor;
+    outline: none;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
 }

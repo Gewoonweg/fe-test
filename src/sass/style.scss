@@ -1,5 +1,5 @@
 // Load external libraries
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '_bootstrap';
 
 // Load general styling
 @import '_variables';
@@ -34,11 +34,55 @@
     }
   }
 
+  .custom-label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .info-btn {
+      margin-top: 7px;
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      background-image: url("../assets/img/info.svg");
+    }
+  }
+
+  .pwd-input {
+    position: relative;
+
+    .pwd-tgl-btn {
+      position: absolute;
+      z-index: 2;
+      top: 17px;
+      right: 10px;
+      width: 18px;
+      height: 14px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor:pointer;
+    }
+
+    input[type=text] + .pwd-tgl-btn {
+      background-image: url("../assets/img/eye_crossed.svg");
+    }
+
+    input[type=password] + .pwd-tgl-btn {
+      background-image: url("../assets/img/eye.svg");
+    }
+
+  }
+
   .splash-screen {
     width: 375px;
 
+    .inner {
+      width: 320px;
+    }
+
     .left-panel {
-      padding: 0px 21px 0px 21px;
+      display: flex;
+      justify-content: center;
 
       .content {
         padding-bottom: 40px;
@@ -57,8 +101,11 @@
 
     .right-panel {
       background-color: $white;
-      padding: 40px 27px 21px 27px;
+      padding: 40px 0px 21px 0px;
       border-radius: 32px 32px 0px 0px;
+
+      display: flex;
+      justify-content: center;
 
       .confirm-btn {
         width: 100%;
@@ -66,6 +113,98 @@
         border-radius: 24px;
         background-color: $textColor;
         color: white;
+        outline: none;
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-style: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .logo {
+      display: block;
+      padding-top: 27px;
+      padding-left: 40px;
+
+      .img {
+        width: 133px;
+        height: 35px;
+        background: transparent url('../assets/img/logo_name.svg') 0% 0% no-repeat padding-box;
+        background-size: contain;
+      }
+    }
+
+    .bg-path {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 663px;
+      height: 561px;
+      background: transparent url('../assets/img/bg_path.png') 0% 0% no-repeat padding-box;
+      background-size: contain;
+    }
+
+    .splash-screen {
+      display: flex;
+      margin-top: 114px;
+      width: 1260px;
+      height: 598px;
+      box-shadow: 0px 10px 25px #2586D41A;
+      border-radius: 24px 24px 24px 24px;
+
+      .left-panel {
+        width: 480px;
+        flex-grow: 1;
+        position: relative;
+        color: $white;
+        background-color: $darkBackground;
+        border-radius: 24px 0px 0px 24px;
+
+
+        .rocket-img {
+          position: absolute;
+          background-image: url("../assets/img/rocket_on_path.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          top: 0px;
+          left: 0px;
+          width: 274px;
+          height: 239px;
+
+        }
+
+        h2 {
+          color: $white;
+
+          .name {
+            color: $white;
+          }
+        }
+
+        .inner {
+          width: 404px;
+          position: absolute;
+          bottom: 30px;
+
+          li {
+            list-style-image: url("../assets/img/vink_invert.svg");
+          }
+        }
+      }
+
+      .right-panel {
+        width: 480px;
+        flex-grow: 1;
+        position: relative;
+        border-radius: 0px 24px 24px 0px;
+
+
+        .inner {
+          position: absolute;
+          bottom: 50px;
+        }
       }
     }
   }
