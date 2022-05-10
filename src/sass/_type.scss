@@ -1,0 +1,90 @@
+/*
+RESET
+*/
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+  display: block;
+}
+
+body{
+  line-height: 1.6rem;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+blockquote, q{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+  content: '';
+  content: none;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/*
+FONTS
+*/
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url(../assets/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+/*
+BASE INIT
+*/
+
+html {
+  font-size: 15px;
+  font-family: Poppins;
+
+}
+
+h2 {
+  font-family: "Lexend Deca";
+  font-weight: bold;
+  font-size: 2.0rem;
+  line-height: 2.3rem;
+}
+
+label {
+  color: $lightTextColor;
+  font-size: 0.85rem;
+}
+
+p, li {
+  line-height: 2.3rem;
+}
