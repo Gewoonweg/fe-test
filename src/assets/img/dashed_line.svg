@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340.838" height="282.026" viewBox="0 0 340.838 282.026">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6658" data-name="Rectangle 6658" width="305.085" height="232.582" transform="translate(0 0)" fill="none" stroke="#0e2e47" stroke-width="2" stroke-dasharray="5 5"/>
+    </clipPath>
+  </defs>
+  <g id="Dashed_line" data-name="Dashed line" transform="matrix(0.985, -0.174, 0.174, 0.985, 0, 52.977)">
+    <g id="Group_5691" data-name="Group 5691" transform="translate(0)" clip-path="url(#clip-path)">
+      <path id="Path_9451" data-name="Path 9451" d="M283.127,0C319.3,45.589,321.87,223.394,173.845,228.2c-42.895-1.6-150.483-5.963-153.931-92.732s62.4-83.079,63.37-82.679c55.353,0,75.27,52.688,73.738,75.622S128.3,229.865,0,231.467" transform="translate(0.007 0.435)" fill="none" stroke="#0e2e47" stroke-width="2" stroke-dasharray="5 5"/>
+    </g>
+  </g>
+</svg>
