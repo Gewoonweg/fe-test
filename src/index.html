@@ -9,10 +9,44 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Front-end test Code d'Or</h1>
+<div class="container">
+    <div class="splash-screen">
+        <div class="left-panel">
+            <h1>
+                <span>maak een account aan voor</span>
+                <span>Mortierbrigade</span>
+            </h1>
+            <div>
+                Je zal volgende locaties kunnen beheren
+                <ul>
+                    <li>De Speelboom Evere</li>
+                    <li>Bambino Schaarbeek</li>
+                    <li>De engeltjes Zaventem</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h1>creëer je wachtwoord</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">E-mailadres</label>
+                    <input type="email" class="form-control" id="emailInput" aria-description="e-mail adres" placeholder="E-mailadres">
+                </div>
 
-    <div id="vue">
-        <example-component></component>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Kies een wachtwoord</label>
+                    <input type="password" class="form-control" id="password" aria-description="wachtwoord" placeholder="8+ Karakters, 1 hoofdletter">
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordRepeat" class="form-label">Herhaal wachtwoord</label>
+                    <input type="password" class="form-control" id="passwordRepeat" aria-description="herhaal wachtwoord" placeholder="8+ Karakters, 1 hoofdletter">
+                </div>
+
+                <button>aan de slag!</button>
+            </form>
+        </div>
     </div>
+</div>
 </body>
 </html>
