@@ -107,6 +107,7 @@
 
       .vb-item-list {
         width: 100%;
+        max-width: 1060px;
         display: flex;
         gap: 8px 24px;
         flex-wrap: wrap;
@@ -141,6 +142,17 @@
 
         }
       }
+    }
+
+    .earth-with-path {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 639px;
+      height: 358px;
+      background-image: url("../assets/img/earth_with_path.png");
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
