@@ -5,9 +5,9 @@
 @import '_variables';
 @import '_type';
 
-// Load components
 
 .registration-page {
+  min-height: 100vh;
   background-color: $lightBackground;
 
   .logo {
@@ -34,103 +34,146 @@
     }
   }
 
-  .control {
-    margin-bottom: 24px;
+  .container-fluid {
+    height: calc(100vh - 50px);
 
-    .custom-label {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
+    .main-row {
+      height: 100%;
 
-      .info-btn {
-        margin-top: 7px;
-        display: inline-block;
-        width: 11px;
-        height: 11px;
-        background-image: url("../assets/img/info.svg");
-      }
-    }
+      .center-col {
+        height: 100%;
+        width: 100%;
 
-    .pwd-input {
-      position: relative;
 
-      .pwd-tgl-btn {
-        position: absolute;
-        z-index: 2;
-        top: 17px;
-        right: 10px;
-        width: 18px;
-        height: 14px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-      }
+        .splash-screen {
+          height: 598px;
+          width: 375px;
 
-      input[type=text] + .pwd-tgl-btn {
-        background-image: url("../assets/img/eye_crossed.svg");
-      }
+          .inner {
+            width: 320px;
+          }
 
-      input[type=password] + .pwd-tgl-btn {
-        background-image: url("../assets/img/eye.svg");
-      }
+          .left-panel {
+            display: flex;
+            justify-content: center;
 
-    }
+            .content {
+              padding-bottom: 40px;
 
-    .invalid-feedback {
-      color: $errorColor;
-    }
-  }
+              ul {
+                padding-left: 1rem;
 
-  .splash-screen {
-    width: 375px;
+                li {
+                  padding-left: 10px;
+                  list-style-image: url("../assets/img/vink.svg");
+                }
+              }
+            }
 
-    .inner {
-      width: 320px;
-    }
+          }
 
-    .left-panel {
-      display: flex;
-      justify-content: center;
+          .right-panel {
+            background-color: $white;
+            padding: 40px 0 21px 0;
+            border-radius: 32px 32px 0 0;
 
-      .content {
-        padding-bottom: 40px;
+            display: flex;
+            justify-content: center;
 
-        ul {
-          padding-left: 1rem;
+            .form {
+              padding-bottom: 120px;
 
-          li {
-            padding-left: 10px;
-            list-style-image: url("../assets/img/vink.svg");
+              .control {
+                margin-bottom: 24px;
+
+                .custom-label {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+
+                  .info-btn {
+                    margin-top: 7px;
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    background-image: url("../assets/img/info.svg");
+                  }
+                }
+
+                .pwd-input {
+                  position: relative;
+
+                  .pwd-tgl-btn {
+                    position: absolute;
+                    z-index: 2;
+                    top: 17px;
+                    right: 10px;
+                    width: 18px;
+                    height: 14px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    cursor: pointer;
+                  }
+
+                  input[type=text] + .pwd-tgl-btn {
+                    background-image: url("../assets/img/eye_crossed.svg");
+                  }
+
+                  input[type=password] + .pwd-tgl-btn {
+                    background-image: url("../assets/img/eye.svg");
+                  }
+
+                }
+
+                .invalid-feedback {
+                  color: $errorColor;
+                  line-height: 1.3rem;
+                }
+              }
+            }
+
+
+            .confirm-btn {
+              width: 100%;
+              height: 48px;
+              border-radius: 24px;
+              background-color: $textColor;
+              color: white;
+              outline: none;
+              border-color: inherit;
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              border-style: none;
+            }
+          }
+        }
+
+        .filler {
+          height: calc(100% - 598px);
+          background-color: $white;
+
+
+          .mobile-footer {
+            position: fixed;
+            bottom: 0px;
+            margin-top: 50px;
+            width: 375px;
+            height: 105px;
+            background-image: url("../assets/img/mobile_footer.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: $white;
           }
         }
       }
 
     }
-
-    .right-panel {
-      background-color: $white;
-      padding: 40px 0 21px 0;
-      border-radius: 32px 32px 0 0;
-
-      display: flex;
-      justify-content: center;
-
-      .confirm-btn {
-        width: 100%;
-        height: 48px;
-        border-radius: 24px;
-        background-color: $textColor;
-        color: white;
-        outline: none;
-        border-color: inherit;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border-style: none;
-      }
-    }
   }
 
+
   @include media-breakpoint-up(xl) {
+
+
     .logo {
       display: block;
       padding-top: 27px;
@@ -154,66 +197,85 @@
       background-size: contain;
     }
 
-    .splash-screen {
-      display: flex;
-      margin-top: 114px;
-      width: 1260px;
-      height: 598px;
-      box-shadow: 0 10px 25px #2586D41A;
-      border-radius: 24px 24px 24px 24px;
+    .container-fluid {
+      .main-row {
+        .center-col {
 
-      .left-panel {
-        width: 480px;
-        flex-grow: 1;
-        position: relative;
-        color: $white;
-        background-color: $darkBackground;
-        border-radius: 24px 0 0 24px;
+          .splash-screen {
+            display: flex;
+            margin-top: 114px;
+            width: 1260px;
+            height: 598px;
+            box-shadow: 0 10px 25px #2586D41A;
+            border-radius: 24px 24px 24px 24px;
+
+            .left-panel {
+              width: 480px;
+              flex-grow: 1;
+              position: relative;
+              color: $white;
+              background-color: $darkBackground;
+              border-radius: 24px 0 0 24px;
 
 
-        .rocket-img {
-          position: absolute;
-          background-image: url("../assets/img/rocket_on_path.png");
-          background-repeat: no-repeat;
-          background-size: contain;
-          top: 0;
-          left: 0;
-          width: 274px;
-          height: 239px;
+              .rocket-img {
+                position: absolute;
+                background-image: url("../assets/img/rocket_on_path.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 0;
+                left: 0;
+                width: 274px;
+                height: 239px;
 
-        }
+              }
 
-        h2 {
-          color: $white;
+              h2 {
+                color: $white;
 
-          .name {
-            color: $white;
+                .name {
+                  color: $white;
+                }
+              }
+
+              .inner {
+                width: 404px;
+                position: absolute;
+                bottom: 30px;
+
+                ul {
+                  li {
+                    list-style-image: url("../assets/img/vink_invert.svg");
+                  }
+                }
+
+              }
+            }
+
+            .right-panel {
+              width: 480px;
+              flex-grow: 1;
+              position: relative;
+              border-radius: 0 24px 24px 0;
+
+
+              .inner {
+                position: absolute;
+                bottom: 50px;
+
+                .form {
+                  padding-bottom: 0px;
+                }
+              }
+            }
           }
-        }
 
-        .inner {
-          width: 404px;
-          position: absolute;
-          bottom: 30px;
-
-          li {
-            list-style-image: url("../assets/img/vink_invert.svg");
+          .filler {
+            display: none;
           }
-        }
-      }
-
-      .right-panel {
-        width: 480px;
-        flex-grow: 1;
-        position: relative;
-        border-radius: 0 24px 24px 0;
-
-
-        .inner {
-          position: absolute;
-          bottom: 50px;
         }
       }
     }
   }
+
 }

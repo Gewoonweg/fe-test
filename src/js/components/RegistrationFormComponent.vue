@@ -56,6 +56,7 @@
       <button type="button" id="confirm-btn" class="confirm-btn" v-on:click="submit($event)" tabindex="0">aan de slag!
       </button>
     </div>
+
   </div>
 </template>
 
