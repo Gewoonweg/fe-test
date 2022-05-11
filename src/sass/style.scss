@@ -20,7 +20,7 @@
       width: 333px;
       height: 22px;
       background: transparent url('../assets/img/logo_name.svg') 0% 0% no-repeat padding-box;
-      background-size: auto 1.5rem;
+      background-size: auto 2.2rem;
     }
 
   }
@@ -34,43 +34,47 @@
     }
   }
 
-  .custom-label {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  .control {
+    margin-bottom: 24px;
 
-    .info-btn {
-      margin-top: 7px;
-      display: inline-block;
-      width: 11px;
-      height: 11px;
-      background-image: url("../assets/img/info.svg");
-    }
-  }
+    .custom-label {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
 
-  .pwd-input {
-    position: relative;
-
-    .pwd-tgl-btn {
-      position: absolute;
-      z-index: 2;
-      top: 17px;
-      right: 10px;
-      width: 18px;
-      height: 14px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      cursor:pointer;
+      .info-btn {
+        margin-top: 7px;
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background-image: url("../assets/img/info.svg");
+      }
     }
 
-    input[type=text] + .pwd-tgl-btn {
-      background-image: url("../assets/img/eye_crossed.svg");
-    }
+    .pwd-input {
+      position: relative;
 
-    input[type=password] + .pwd-tgl-btn {
-      background-image: url("../assets/img/eye.svg");
-    }
+      .pwd-tgl-btn {
+        position: absolute;
+        z-index: 2;
+        top: 17px;
+        right: 10px;
+        width: 18px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+      }
 
+      input[type=text] + .pwd-tgl-btn {
+        background-image: url("../assets/img/eye_crossed.svg");
+      }
+
+      input[type=password] + .pwd-tgl-btn {
+        background-image: url("../assets/img/eye.svg");
+      }
+
+    }
   }
 
   .splash-screen {
