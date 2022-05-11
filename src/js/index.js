@@ -2,7 +2,7 @@
 import '../sass/style.scss'
 import {Tooltip} from "bootstrap";
 // Import vue and the example component
-import Vue from 'vue/dist/vue.js'
+import Vue from 'vue/dist/vue.min.js'
 import RegistrationFormComponent from './components/RegistrationFormComponent.vue'
 
 const init = () => {

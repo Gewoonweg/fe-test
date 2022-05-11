@@ -12,7 +12,7 @@ let multipleHtmlPlugins = htmlPageNames.map(name => {
 });
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     main: './src/js/index.js',
     base: './src/js/base.js',
