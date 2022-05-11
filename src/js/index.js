@@ -3,7 +3,7 @@ import '../sass/style.scss'
 
 // Import vue and the example component
 import Vue from 'vue/dist/vue.js'
-import ExampleComponent from './components/ExampleComponent.vue'
+import RegistrationFormComponent from './components/RegistrationFormComponent.vue'
 
 const init = () => {
   // Initialize javascript functions
@@ -14,7 +14,7 @@ const loadComponent = () => {
   new Vue({ // eslint-disable-line no-new
     el: '#vue',
     components: {
-      ExampleComponent
+      'registration-form': RegistrationFormComponent
     }
   })
 }
