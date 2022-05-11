@@ -17,7 +17,7 @@
 
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row main-row">
         <div class="col">
 
         </div>
@@ -46,51 +46,15 @@
                 <div class="right-panel">
                     <div class="inner">
                         <h2 class="d-none d-xl-block">creëer je wachtwoord</h2>
-                        <form>
-                            <div class="mb-4">
-                                <div class="custom-label">
-                                    <label for="emailInput" class="form-label">E-mailadres</label>
-                                    <span class="info-btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                                          title="Enige info over de GDPR hier."></span>
-                                </div>
-                                <input type="email" class="form-control" id="emailInput" aria-description="e-mail adres"
-                                       placeholder="E-mailadres">
-                            </div>
-
-                            <div class="mb-4">
-                                <div class="custom-label">
-                                    <label for="password" class="form-label">Kies een wachtwoord</label>
-                                    <span class="info-btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                                          title="Enige info over de GDPR hier."></span>
-                                </div>
-                                <div class="pwd-input">
-                                    <input type="password" class="form-control" id="password"
-                                           aria-description="wachtwoord"
-                                           placeholder="8+ Karakters, 1 hoofdletter">
-                                    <div class="pwd-tgl-btn"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <div class="custom-label">
-                                    <label for="passwordRepeat" class="form-label">Herhaal wachtwoord</label>
-                                    <span class="info-btn" data-bs-toggle="tooltip" data-bs-placement="top"
-                                          title="Enige info over de GDPR hier."></span>
-                                </div>
-                                <div class="pwd-input">
-                                    <input type="password" class="form-control" id="passwordRepeat"
-                                           aria-description="herhaal wachtwoord"
-                                           placeholder="8+ Karakters, 1 hoofdletter">
-                                    <div class="pwd-tgl-btn"></div>
-                                </div>
-                            </div>
-
-                            <div class="mb-4">
-                                <button class="confirm-btn">aan de slag!</button>
-                            </div>
-                        </form>
+                        <div id="vue">
+                            <registration-form></registration-form>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="filler">
+                <div class="mobile-footer"></div>
             </div>
         </div>
         <div class="col"></div>
@@ -98,3 +62,4 @@
 </div>
 </body>
 </html>
+
