@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <form ref="registrationForm" method="post" action="/base">
+    <form ref="registrationForm" method="get" action="/base.html">
       <div class="control">
         <div class="custom-label">
           <label for="emailInput" class="form-label">E-mailadres</label>
