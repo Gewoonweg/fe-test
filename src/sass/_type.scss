@@ -83,10 +83,21 @@ h2 {
   line-height: 2.3rem;
 
   @include media-breakpoint-up(xl) {
-    font-size: 17px;
     font-size: 1.75rem;
     line-height: 2.3rem;
   }
+}
+
+h3 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 label {

@@ -1,0 +1,108 @@
+// Load external libraries
+@import '_bootstrap';
+
+// Load general styling
+@import '_variables';
+@import '_type';
+
+.base-page {
+  .title-bar {
+    height: 88px;
+    width: 100%;
+    padding: 0px 0px 0px 40px;
+    margin-bottom: 40px;
+
+    position: relative;
+
+    .logo {
+      position: fixed;
+      top: 27px;
+      width: 135px;
+      height: 35px;
+      background-image: url("../assets/img/logo_name.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .menu-col {
+    width: 280px;
+    min-height: 100vh;
+    background-color: $menuColor;
+
+    .menu {
+      padding-left: 40px;
+      display: block;
+      position: fixed;
+      width: 280px;
+
+      .menu-item {
+        display: block;
+        line-height: 23px;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 24px;
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+
+        &:hover {
+          color: $darkBackground;
+        }
+
+        &:focus {
+          color: $darkBackground;
+          outline: none;
+        }
+
+      }
+
+    }
+  }
+
+  .content {
+    padding-left: 66px;
+
+    h2 {
+      color: $darkBackground;
+      padding-bottom: 32px;
+    }
+
+    h3 {
+      padding-bottom: 24px;
+    }
+
+    .vb-item-list {
+      font-size: 0.8rem;
+
+      color: $lightTextColor;
+
+      .vb-item {
+        display: block;
+        border: 1px solid #C5C5C5;
+        border-radius: 12px;
+        text-decoration: none;
+        padding: 5px 8px 5px 8px;
+        margin-bottom: 8px;
+        width: 489px;
+        color: $lightTextColor;
+        cursor: pointer;
+
+        h4 {
+          color: $darkBackground;
+          padding-bottom: 0px;
+        }
+
+        .bold {
+          font-weight: bold;
+        }
+
+        &:focus {
+          outline: none;
+          background-color: $lightBackground;
+        }
+
+      }
+    }
+  }
+}
